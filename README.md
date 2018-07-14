@@ -2,7 +2,8 @@
 1. [Description](README.md#description)
 2. [Highlights](README.md#highlights)
 3. [Run the code](README.md#Run-the-code)
-5. [Test](README.md#test)
+4. [Test](README.md#test)
+5. [Code Structure](README.md#code-structure)
 6. [Contacts](README.md#contacts)
 
 # Problem
@@ -28,11 +29,11 @@ The output file contains comma (`,`) separated fields of drug_name, num_prescrib
 # Test
 
 Five tests are included:
-test_1: test file provided by Insight.
-test_2: test whether the code can handle records with "*,*" such as '1000000004,"Rodriguez, MD",Maria,"CHLORPROMAZINE 5,000",2000'
-test_3: test whether the code can pass missing data, such as '1000000004,Maria,CHLORPROMAZINE,2000'
-test_4: test if the code passes invalid data: '1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000$'
-test_5: test sorting by cost and drug_name in descending
+test_1: test file provided by Insight;
+test_2: test whether the code can handle records with "*,*" such as '1000000004,"Rodriguez, MD",Maria,"CHLORPROMAZINE 5,000",2000';
+test_3: test whether the code can pass missing data, such as '1000000004,Maria,CHLORPROMAZINE,2000';
+test_4: test if the code passes invalid data: '1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000$';
+test_5: test sorting by cost and drug_name in descending.
 
 To run the test, bash the run_tests.sh file in insight_testsuite
 `   pharmacy_counting/insight_testsuite~$ ./run_tests.sh``
