@@ -41,7 +41,9 @@ test_4: test if the code passes invalid data: '1000000004,Rodriguez,Maria,CHLORP
 test_5: test sorting by cost and drug_name in descending.
 
 To run the test, bash the run_tests.sh file in insight_testsuite
+
 `   pharmacy_counting/insight_testsuite~$ ./run_tests.sh``
+
 
 # Code Structure
 
@@ -77,6 +79,7 @@ To run the test, bash the run_tests.sh file in insight_testsuite
 # Contacts
 
 Please feel free to reach out over email (tswang@udel.edu).
+
 Hope to hear from you soon,
 
 
