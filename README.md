@@ -41,6 +41,7 @@ Five tests are included:
 **Test_5**: test sorting by cost and drug_name in descending
 
 To run the test, bash the run_tests.sh file in insight_testsuite
+
     pharmacy_counting/insight_testsuite~$ ./run_tests.sh 
 
 # Code Structure
