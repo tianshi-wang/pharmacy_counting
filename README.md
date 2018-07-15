@@ -8,15 +8,15 @@
 
 # Problem
 
-This Python3 code is for coding chanllenge of Insight. As required, it can generate a list of all drugs, the total number of UNIQUE individuals who prescribed the medication, and the total drug cost. The list is in descending order based on the total drug cost and if there is a tie, drug name. 
+This Python3 code is written for the coding chanllenge of Insight. As required, the code generates a list of all drugs, the total number of UNIQUE individuals who prescribed the medication, and the total drug cost. The list is in descending order based on the total drug cost and if there is a tie, drug name. 
 
 
 # Highlights
 
 1. Good scalability. The code process the 1.1 GB sample file in ~65 seconds without showing significantly slow-down as a function of the number of records 
-2. The maximum memory usage is lowered by storing self-defined prescriber_ID instead of prescriber_name. For example file, the memory usage is reduced to ~1 GB from ~2.2 GB.
+2. The maximum memory usage is lowered by storing self-defined prescriber_ID instead of prescriber_name. For the sample file with size of 1.1 GB, the maximum memory usage is reduced to ~1 GB from ~2.2 GB.
 3. Defensively coded: ability to handle corrupt records such as missing or invalid data and to output useful information 
-4. Well tested for different situations  
+4. Tested for different situations  
 
 # Run the code
 
@@ -30,20 +30,18 @@ The output file contains comma (`,`) separated fields of drug_name, num_prescrib
 
 Five tests are included:
 
-test_1: test file provided by Insight;
+**Test_1**: test file provided by Insight;
 
-test_2: test whether the code can handle records with "*,*" such as '1000000004,"Rodriguez, MD",Maria,"CHLORPROMAZINE 5,000",2000';
+**Test_2**: test whether the code can handle records with "*,*" such as '1000000004,"Rodriguez, MD",Maria,"CHLORPROMAZINE 5,000",2000';
 
-test_3: test whether the code can pass missing data, such as '1000000004,Maria,CHLORPROMAZINE,2000';
+**Test_3**: test whether the code can pass missing data, such as '1000000004,Maria,CHLORPROMAZINE,2000'
 
-test_4: test if the code passes invalid data: '1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000$';
+**Test_4**: test if the code passes invalid data: '1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000$'
 
-test_5: test sorting by cost and drug_name in descending.
+**Test_5**: test sorting by cost and drug_name in descending
 
 To run the test, bash the run_tests.sh file in insight_testsuite
-
-`   pharmacy_counting/insight_testsuite~$ ./run_tests.sh``
-
+    pharmacy_counting/insight_testsuite~$ ./run_tests.sh 
 
 # Code Structure
 
@@ -84,5 +82,7 @@ Hope to hear from you soon,
 
 
 Tianshi Wang
+
 https://tswang.wixsite.com/home
+
 https://github.com/tianshi-wang/
